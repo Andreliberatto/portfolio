@@ -78,7 +78,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="https://steamcommunity.com/id/liberatto/" target="_blank" class="steam">
+                  <a href="xxxxx" target="_blank" class="steam">
                     <i class="fab fa-steam"></i> Steam
                   </a>
                 </li>
@@ -120,8 +120,8 @@
             <h3>Uninter trabalho</h3>
             <iframe src="./Uninter trabalho/index.html" frameborder="0" allowfullscreen></iframe>
             <div class="botoes">
-              <button class="botao-tela-cheia" onclick="abrirTelaCheia('Steam')">Ver em Tela Cheia</button>
-              <a href="https://github.com/Andreliberatto/Steamclone" target="_blank">
+              <button class="botao-tela-cheia" onclick="abrirTelaCheia('Uninter Trabalho')">Ver em Tela Cheia</button>
+              <a href="https://github.com/Andreliberatto/Uninter-trabalho" target="_blank">
                 <button>Repositório</button>
               </a>
             </div>
@@ -143,7 +143,7 @@
             <iframe src="./Uber/index.html" frameborder="0" allowfullscreen></iframe>
             <div class="botoes">
               <button class="botao-tela-cheia" onclick="abrirTelaCheia('Uber')">Ver em Tela Cheia</button>
-              <a href="xxxxxx" target="_blank">
+              <a href="https://github.com/Andreliberatto/Uber" target="_blank">
                 <button>Repositório</button>
               </a>
             </div>
@@ -176,11 +176,11 @@
       const abas = document.querySelectorAll(".aba");
       abas.forEach(aba => {
         aba.addEventListener("click", () => {
-          // Remove a classe "selecionado" de todas as abas e informações
+          // Remove a classe "selecionado" de todas as abas e informaões
           abas.forEach(aba => aba.classList.remove("selecionado"));
           document.querySelectorAll(".informacao").forEach(info => info.classList.remove("selecionado"));
 
-          // Adiciona a classe "selecionado" à aba cicada e à informação correspondente
+          // Adiciona a clsse "selecionado" à aba cicada e à informação correspondente
           aba.classList.add("selecionado");
           document.getElementById(`informacao-${aba.id}`).classList.add("selecionado");
         });
