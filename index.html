@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Andre Liberatto</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Íconess-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+      <h1>Andre Liberatto</h1>
+      <p>Desenvolvedor Frontend Júnior</p>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="conteudo-principal">
+      <!-- Cartão de Informações -->
+      <section class="cartao">
+        <div class="minhas-informacoes">
+          <img src="./src/imagens/foto-perfil.jpg" alt="Foto de perfil" class="foto-perfil" />
+          <h2 class="nome">Andre A Liberatto</h2>
+          <p class="cargo">Desenvolvedor Frontend Júnior</p>
+        </div>
+
+        <!-- Abas de Navegação -->
+        <div class="conteudo">
+          <ul class="abas">
+            <li class="aba selecionado" id="sobre-mim">
+              <img src="./src/imagens/sobre.gif" alt="Ícone sobre mim" />
+            </li>
+            <li class="aba" id="minhas-redes">
+              <img src="./src/imagens/dog.gif" alt="Ícone redes sociais" />
+            </li>
+            <li class="aba" id="meus-hobbies">
+              <img src="./src/imagens/coracao.gif" alt="Ícone hobbies" />
+            </li>
+          </ul>
+
+          <!-- Informações das Abas -->
+          <div class="informacoes-abas">
+            <!-- Sobre Mim -->
+            <div class="informacao selecionado" id="informacao-sobre-mim">
+              <h3 class="sub-titulo">Sobre</h3>
+              <div class="descricao">
+                <p>Oi! Meu nome é Andre A Liberatto, seja bem-vindo(a) ao meu espaço!</p>
+                <p>
+                  Sou apaixonado por computação desde cedo, influenciado pelo meu pai, que é <strong>Full Stack Developer</strong>. Sempre sonhei em trabalhar na área de tecnologia e hardware em geral. Sempre fui curioso e quis entender como as coisas funcionam e como fazer elas funcionarem. Essa curiosidade surgiu ao observar meu pai codificando e ficou ainda mais forte quando jogava com ele na época do MS-DOS. Fiquei fascinado quando ele fez um jogo de nave como presente de aniversário para mim. Esse momento me mostrou que podemos criar nossas próprias histórias e universos, e desde então me encantei com a ideia de criar e desenvolver.
+                </p>
+                <p>
+                  Atualmente, estou cursando <strong>Gestão da Tecnologia da Informação</strong> e continuo expandindo meus conhecimentos com cursos de <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. No momento, estou me aperfeiçoando na linguagem <strong>Python</strong>, que me fascina pela sua praticidade e versatilidade, permitindo criar uma variedade de projetos e soluções.
+                </p>
+                <p>
+                  Seja bem-vindo(a) ao meu cantinho, e espero que se interesse pelo meu trabalho!
+                </p>
+              </div>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="informacao" id="informacao-minhas-redes">
+              <h3 class="sub-titulo">Minhas Redes</h3>
+              <ul class="redes-sociais">
+                <li>
+                  <a href="https://example.com/curriculo" target="_blank" class="curriculo">
+                    <i class="fas fa-file-alt"></i> Currículo
+                  </a>
+                </li>
+                <li>
+                  <a href="https://steamcommunity.com/id/liberatto/" target="_blank" class="steam">
+                    <i class="fab fa-steam"></i> Steam
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/andr%C3%A9-liberatto-129495238/" target="_blank" class="linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/Andreliberatto" target="_blank" class="github">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Hobbies -->
+            <div class="informacao" id="informacao-meus-hobbies">
+              <h3 class="sub-titulo">Meus Hobbies</h3>
+              <div class="descricao">
+                <p>Além de programar, tenho vários hobbies que me ajudam a relaxar e me inspirar.</p>
+                <ul>
+                  <li>🌱 Cuidar das minhas plantas.</li>
+                  <li>📚 Ler livros e mangás.</li>
+                  <li>🍿 Assistir séries e animes.</li>
+                  <li>🚶‍♂️ Passear ao ar livre e explorar novos lugares com a pessoa que me faz bem.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Projetos -->
+      <section class="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-container">
+          <div class="projeto">
+            <h3>Projeto Steam</h3>
+            <iframe src="./Steam/index.html" frameborder="0" allowfullscreen></iframe>
+            <div class="botoes">
+              <button class="botao-tela-cheia" onclick="abrirTelaCheia('Steam')">Ver em Tela Cheia</button>
+              <a href="https://github.com/Andreliberatto/Steamclone" target="_blank">
+                <button>Repositório</button>
+              </a>
+            </div>
+          </div>
+          <h2>Meus Projetos</h2>
+        <div class="projetos-container">
+          <div class="projeto">
+            <h3>Projeto Sakura</h3>
+            <iframe src="/Sakura/index.html" frameborder="0" allowfullscreen></iframe>
+            <div class="botoes">
+              <button class="botao-tela-cheia" onclick="abrirTelaCheia('Sakura')">Ver em Tela Cheia</button>
+              <a href="https://github.com/Andreliberatto/RestauranteSakura" target="_blank">
+                <button>Repositório</button>
+              </a>
+            </div>
+          </div>
+          <h2>Meus Projetos</h2>
+        <div class="projetos-container">
+          <div class="projeto">
+            <h3>Projeto Uber</h3>
+            <iframe src="./Uber/index.html" frameborder="0" allowfullscreen></iframe>
+            <div class="botoes">
+              <button class="botao-tela-cheia" onclick="abrirTelaCheia('Uber')">Ver em Tela Cheia</button>
+              <a href="xxxxxx" target="_blank">
+                <button>Repositório</button>
+              </a>
+            </div>
+          </div>
+          <div class="projeto">
+            <h3>Projeto Netflix</h3>
+            <iframe src="./Netflix/index.html" frameborder="0" allowfullscreen></iframe>
+            <div class="botoes">
+              <button class="botao-tela-cheia" onclick="abrirTelaCheia('Netflix')">Ver em Tela Cheia</button>
+              <a href="https://github.com/Andreliberatto/Portifolio-Projetos/tree/main/Netflix" target="_blank">
+                <button>Repositório</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/Andreliberatto" target="_blank">
+          <button class="mais-projetos">Ver Mais Projetos</button>
+        </a>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <p>&copy; 2023 - Andre Liberatto</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      // Função para alternar entre as abas
+      const abas = document.querySelectorAll(".aba");
+      abas.forEach(aba => {
+        aba.addEventListener("click", () => {
+          // Remove a classe "selecionado" de todas as abas e informações
+          abas.forEach(aba => aba.classList.remove("selecionado"));
+          document.querySelectorAll(".informacao").forEach(info => info.classList.remove("selecionado"));
+
+          // Adiciona a classe "selecionado" à aba cicada e à informação correspondente
+          aba.classList.add("selecionado");
+          document.getElementById(`informacao-${aba.id}`).classList.add("selecionado");
+        });
+      });
+
+      // Função para abrir o projeto em tela cheia
+      function abrirTelaCheia(projeto) {
+        const iframe = document.querySelector(`.projeto iframe[src*="${projeto}"]`);
+        if (iframe.requestFullscreen) {
+          iframe.requestFullscreen();
+        } else if (iframe.mozRequestFullScreen) { // Firefox
+          iframe.mozRequestFullScreen();
+        } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari e Opera
+          iframe.webkitRequestFullscreen();
+        } else if (iframe.msRequestFullscreen) { // IE/Edge
+          iframe.msRequestFullscreen();
+        }
+      }
+    </script>
+  </body>
+</html>
