@@ -2,8 +2,6 @@
     scrollbar-width: thin;
     scrollbar-color: #e228d8 #070d12;
 }
-
-/* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
     width: 12px;
 }
