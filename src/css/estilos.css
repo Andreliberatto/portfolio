@@ -10,7 +10,6 @@ body {
   background-repeat: no-repeat; 
 }
   
-  /* Cabeçalho */
   .cabecalho {
     text-align: center;
     padding: 20px;
@@ -28,7 +27,6 @@ body {
     color: #f3f3f3;
   }
   
-  /* Cartão de Informações */
   .cartao {
     background-color: #252541;
     border-radius: 10px;
@@ -60,7 +58,6 @@ body {
     color: #f3f3f3;
   }
   
-  /* Abas de Navegação */
   .abas {
     display: flex;
     justify-content: center;
@@ -92,7 +89,6 @@ body {
     height: 30px;
   }
   
-  /* Informações das Abas */
   .informacoes-abas {
     margin-top: 20px;
   }
@@ -115,7 +111,6 @@ body {
     }
   }
   
-  /* Redes Sociais */
   .redes-sociais {
     list-style: none;
     padding: 0;
@@ -136,7 +131,6 @@ body {
     color: #026b48;
   }
   
-  /* Seção de Projetos */
   .projetos {
     background-color: #2a2a40;
     border-radius: 10px;
