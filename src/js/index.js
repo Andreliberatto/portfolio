@@ -1,18 +1,15 @@
 const abas = document.querySelectorAll(".aba");
 let viewCount = localStorage.getItem('viewCount') || 0;
 
-// Incrementar o contador ao carregar a página
+
 viewCount++;
 localStorage.setItem('viewCount', viewCount);
 
-// Mostrar o contador no rodapé
-document.addEventListener('DOMContentLoaded', function() {
-    const rodape = document.querySelector('.rodape');
-    const counterElement = document.createElement('p');
-    counterElement.textContent = `Esta página foi visualizada ${viewCount} vezes`;
-    counterElement.style.marginTop = '10px';
-    counterElement.style.color = '#02d08f';
-    rodape.appendChild(counterElement);
+
+const counterElement = document.createElement('p');
+counterElement.textContent = `Esta página foi visualizada ${viewCount} vezes`;
+counterElement.className = 'contador-visualizacoes';
+rodape.appendChild(counterElement);
 });
 
 abas.forEach(aba => {
