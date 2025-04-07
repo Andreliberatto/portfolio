@@ -1,4 +1,4 @@
-/* Estilos Gerais */
+
 body {
     font-family: 'VT323', monospace;
     background-color: #070d12;
@@ -6,8 +6,7 @@ body {
     margin: 0;
     padding: 0;
   }
-  
-  /* Seção de Projetos */
+
   #projetos {
     position: fixed;
     top: 50px;
@@ -83,7 +82,6 @@ body {
     margin-top: 20px;
   }
   
-  /* Responsividade */
   @media (max-width: 768px) {
     #projetos {
       position: static;
