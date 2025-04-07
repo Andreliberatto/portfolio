@@ -193,15 +193,40 @@ body {
     background-color: #026b48;
   }
   
-  /* Rodapé */
-  .rodape {
+.rodape {
     text-align: center;
     padding: 20px;
     background-color: #2a2a40;
     margin-top: 20px;
-  }
-  
-  .rodape p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape p {
     font-size: 1rem;
     color: #f3f3f3;
-  }
+    margin: 5px 0;
+}
+.contador-visualizacoes {
+    font-size: 0.9rem;
+    color: #02d08f;
+    margin-top: 10px;
+    animation: pulse 2s infinite;
+    font-weight: bold;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+}
